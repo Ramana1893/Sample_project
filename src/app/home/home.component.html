@@ -1,0 +1,22 @@
+<ul>
+  <li>
+    <h2><a routerLink="login">Login</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" routerLink="/fpwd">Forgot Password</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" routerLink="/register">Register</a></h2>
+  </li>
+ </ul>
+ <div class="card card-block" *ngFor="let joke of jokes">
+  <h4 class="card-title">{{joke.setup}}</h4>
+  <p class="card-text">{{joke.punchline}}</p>
+</div>
+
+<!-- Trigger/Open The Modal -->
+<button (click)="openModal()">Open Modal</button>
+
+ <app-about></app-about>
+ <app-contact></app-contact>
+ <app-child [name]="message"></app-child>

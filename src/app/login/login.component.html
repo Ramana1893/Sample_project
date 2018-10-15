@@ -1,0 +1,6 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+Username: <input type="text"  formControlName="loginName"><br>
+Pwd:  <input type="password" formControlName="loginPassword"><br>
+<input type="submit" [disabled]="!myForm.valid" value="submit">
+</form>
+<router-outlet></router-outlet>
