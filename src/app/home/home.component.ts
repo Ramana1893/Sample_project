@@ -13,7 +13,7 @@ jokes: Object[];
   constructor( private api:ApiService) {
     this.jokes = [
       {
-        setup: "What did the cheese say when it looked in the mirrrror?",
+        setup: "What did the cheese say when it looked in the mirror?",
         punchline: "Hello-Me (Halloumi)"
       },
       {
